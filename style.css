@@ -93,7 +93,36 @@ a {
         }
     }
 }
-
+.nav-menu-ham{
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: relative;
+    font-size: 2rem;
+    position: absolute;
+    top: 1.9rem;
+    right: -1rem;
+    width: 100vw;
+    text-align: center;
+    >a{
+        padding: 1rem;
+        &:hover{
+            transition: 0.3s;
+            background-color: var(--darkblue);
+        }
+    }
+}
+.on-nav-ham{
+    display: flex;
+}
+.ham{
+    display: none;
+    cursor: pointer;
+    position: relative;
+}
+.ham-icon{
+    scale: 2;
+}
 .block-1 {
     position: relative;
     overflow: hidden;
@@ -554,6 +583,12 @@ a {
 
     .section-7 {
         width: 85%;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .ham{
+        display: flex;
     }
 }
 

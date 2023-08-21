@@ -36,3 +36,7 @@ document.addEventListener('scroll', () => {
         }
     }
 })
+const nav_ham = document.querySelector('.nav-menu-ham')
+const on_nav_ham = () => {
+    nav_ham.classList.toggle('on-nav-ham')
+}
